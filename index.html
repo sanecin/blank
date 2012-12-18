@@ -1,140 +1,78 @@
+
+<?xml version="1.0" encoding="windows-1251" ?>
 <!DOCTYPE html>
-<!-- [¤[mdx]@[_Fit_.html]¤ ...  -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="p_a q_f">
+<head>
+<title>[fit][БЛАНКЪ]</title><!--[1514250cfbff47ba461.36212297]-->
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<meta name="description" content="[mdx_Service_meta][[fit][БЛАНКЪ]¤_Blank_/_Service_/_Pages_/fit/ ][2954350cfbff47bd111.88242264_]" />
+<meta name="keywords" content="[AI WEB research][proto¤1358850cfbff47bd1d3.69770406_]" />
+<meta name="author" content="SanEcIn" />
+<meta name="revised" content="15/12/2012" />
+<link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAwMDAAICAgAAAAP8AAP8AAAD//wD/AAAA/wD/AP//AAD///8AAAAAAAAAAAAP////////8A/////////wD/AAAAAAD/AP8P////8P8A/w/////w/wD/D/AAD/D/AP8P8P8P8P8A/w/w/w/w/wD/D/AAD/D/AP8P////8P8A/w/////w/wD/AAAAAAD/AP////////8A/////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" /><style type="text/css">/*[¤[TeRmiNuS]@[_Service_][_style_.css]¤¤¤ ... */
 
- <!--/*... make with all this code all you want ... cool GPL ...
-... кто будет продавать этот код, тот мудак и умрёт в страшных муках ... русский GPL ...*/-->
+/*][ ... selection disable ... 
+::selection {background:transparent;}
+* {-moz-user-select: none;-webkit-user-select: none;user-select: none;}
+*/
+/*][ ... focus bug ... */
+*:focus{outline:none;}
+/*][ ... overflow bug ...*/ 
+/* * {z-index:1;cursor:default;}[!q!c!i]*/
+/* *:hover {z-index:1000;} ... target to menu ? ... */
 
-<html><head>
+/*][ ... full screen ...*/ 
+:fullscreen {background:#000040;color:white;}
+/*
+:fullscreen-ancestor:root {overflow:hidden;}
+:fullscreen-ancestor {z-index:auto;opacity:1;mask:none;clip:auto;filter:none;transform:none;transition:none;}
+*/
 
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
-<meta name="description" content="[¤[mdx][80144f9d4923e49054.99106145@[_Fit_.html]¤]">
-<meta name="keywords" content="_Fit_.html">
-<meta name="author" content="SanEcIn">
-<meta name="revised" content="29/04/2012">
+* {padding:0px;margin: 0px;}
 
-  <title>_Fit_</title>
-  
-<link rel="shortcut icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAV0lEQVR4nGP8DwQMFAAmSjTDDWBkZCQLg/VS3QvIphMjzoSuCASwOQomhm4I3AB8mvEZwoQuQEzAIeuBByIxLsCmDu4FXH7EpxnFAEKG4HIh9dPBCDQAAKYZLmHAFM5jAAAAAElFTkSuQmCC">
+table {border-collapse: collapse;border-spacing: 0;}
+ 
+/*][ ... */
 
-<style>
+body {
+	cursor:default;
+	background:#008080;
+	font-size:16px;font-weight:900;font-family:Verdana,Arial,Tahoma,Courier;
+	text-shadow:1px 1px 1px #000000;
+	color:#ffffa0;
+/*	white-space:nowrap;  *//*][ ... normal;nowrap;pre;pre-line;pre-wrap;inherit;*/
 
-/**/body {
- 	overflow-x:hidden;
-	overflow-y:scroll;
-}	 
-
-section {width:1000px;}/*	 */
-
-.wrapper {
-	position:absolute;top:0px;right:0px;bottom:0px;left:0px;/* ... наследует размер контЭйнера ... */
-/*	overflow-x:hidden;overflow-y:scroll;*/
-/*	padding:2%; */
+/*	width:100%;
+	height:100%;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+*/
 }
 
-.fit {
-	/*width:...px;	 ...  правильнее ... :/ ... */
-	position:absolute;
-}
+body,div,section,header,article,footer,menu {display:block}	/* html5 ... :/ ... */
 
-</style>
+section {background:#d0ffd0;margin:20px auto;padding:10px;width:1000px;}
 
-<script type="text/javascript">
+section,header,article,footer,a {border:1px #404040 solid;}
 
-function tic() {
-
-	for(i=fit.length;i--;){//
-
-		j=fit[i];//		j=fit;
-		f=fit[i].style;//		f=j.style;
-		z=fit[i].zoom;//		z=j.zoom;
-
-		sc_=j.parentNode.clientWidth/j.clientWidth;
-		if (j.scale!=sc_){
-			j.scale=sc_;
-			f.webkitTransform="scale("+sc_*z+")";
-			f.MozTransform="scale("+sc_*z+")";
-			f.OTransform="scale("+sc_*z+")";
-
-			f.top=(sc_*z-1)*j.clientHeight/2+"px";
-			f.left=(50-50/sc_)+"%";
-		}
-
-	}//
-	once_=setTimeout("tic()",50);
-
-}
-
-function init(){
-
-	for(i=(fit=document.querySelectorAll (".fit")).length;i--;) {fit[i].scale=1;fit[i].zoom=1;}//
-//document.querySelector ("#mdxframe").src=a;//+"?"+Math.floor(Math.random()*10)
-
-	tic();
-
-}
-
-if (window.addEventListener) window.addEventListener("load",init, false); else window.onload=init();
-
-</script>
-
-<style>
-
-* {
-    padding:0px;margin: 0px;
-}
-
-body{
-	cursor:default;text-shadow:1px 1px 1px #000000;
-	background:#008080;color:#ffffa0;
-	font-size:16px;font-weight:900;font-family:Tahoma;
-/*	white-space:nowrap;  */
-}
-
-section,header,article,footer,menu,nav {display:block;}	/* html5 ... :/ ... */
-
-section {background:#d0ffd0;padding:10px;}
-
-header,article,footer,i,a {border: 2px #000000 solid;}
-i:not([class]),pre:not([class]) {text-shadow: 1px 1px 3px #000000;}
-
-header,article,footer,nav,h1,h2,h3,h4,h5,h6,i {border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;}
-a,input,div{border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;}
+section,header,article,footer,nav,h1,h2,h3,h4,h5,h6 {border-radius: 10px;}
+/* a,input,div {border-radius: 5px;}*/
 
 header{background:#80d0ff;padding:10px;}
 nav{background:#ffa000;margin:10px auto 10px auto;padding:10px;}
-article {background:#b0e0b0;margin:10px auto 10px auto;padding:10px;color:#ffffff;font-size:16px;font-weight:900;font-family:Tahoma;}
-footer {background:#80b0d0;height:66px;text-align:center;}
+article {background:rgba(0,0,0,0.12);/*background:#b0e0b0;*/margin:10px auto 10px auto;padding:10px;color:#ffffff;font-size:16px;font-weight:900;font-family:Tahoma;}
+footer {background:#4090b0;height:66px;}
 
-a:link,a:visited,a:hover,a:active {color:#ffffff;}/**/
+i {border-radius: 5px;font-size:10px;font-weight:900;font-family:Verdana;}/*,span*/
 
-a>img,input {cursor:pointer;}
-
-div.mdx {
-border:0px;
-background:#408080;
-margin:10px;
-padding: 5px 50px 5px 50px;
-box-shadow: 3px 3px 10px #000,5px 5px 5px rgba(255,255,255,0.3) inset,-5px -5px 5px rgba(0,0,0,0.3) inset;/**/
-border:1px #000000 solid;
-}
-
-div.en {background:#406080;}
-
-div.a {background:#806080;}
-
-.r {background:#ff8080;}
-
-.o {background:#ffb000;color:#ffffff;}
-
-div.u {background:#806060;}
-
-div.i {background:#d06040;}
-
-i {padding:2px 10px;font:10px bold;font-family:Verdana;}
-i:not([class]) {background:#70a0a0;color:#ffffff;}
-pre {padding:10px 10px;background:#505070;color:#ffffff;font:12px bold;font-family:Verdana;}
+i:not([class]) {background:#70a0a0;color:#ffffff;padding:2px 10px;border:1px #404040 solid;border-radius: 10px;text-shadow: 1px 1px 3px #000000;}
 
 p,span,i {display:inline-block;}/* */
+
+pre {margin:10px;padding:10px;background:#404040;color:#ffffff;font:12px bold;font-family:Verdana;}
+pre *{background:#555577;}
 
 h1 {font-size:28px;}
 h2 {font-size:24px;}
@@ -152,32 +90,364 @@ header h5,
 header h6 {color:#ffffff;background:#60b0d0;text-shadow: 2px 2px 5px #000000;padding: 3px 10px 3px 10px;}
 header h1 {padding: 5px 50px 5px 50px;}
 
-</style>
+a:link,a:visited,a:hover,a:active {color:#ffffff;}/**/
 
+a>img,input {cursor:pointer;}
+
+/* ¤ */
+.¤ {display:table-cell;}
+._mdx_ {}
+
+/*BORDER*/
+.b_n {border:none;}
+.b_h {border-color:#ff00ff;}
+.b_bl {border:2px solid;border-color:#000000;}
+
+/*BORDER_RADIUS*/
+/*.b_r {border-radius: 5px;}*/
+.b_r5 {border-radius: 5px;}
+.b_r10 {border-radius: 10px;}
+.b_r15 {border-radius: 15px;}
+.b_r20 {border-radius: 20px;}
+.b_r25 {border-radius: 25px;}
+.b_r30 {border-radius: 30px;}
+
+/*DISPLAY*/
+.w_dbl {display:block;}
+.w_dil {display:inline;}
+.w_dib {display:inline-block;}
+.w_dtc {display:table-cell;}
+
+/*W_TH*/
+.w_th {
+/*display:block;*/
+-webkit-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+opacity: 1;
+}
+
+.w_th:hover{
+background:rgba(255,255,255,0.25);
+/*
+-webkit-transform:scale(1.05);
+-moz-transform:scale(1.05);
+-o-transform:scale(1.05);
+box-shadow: 7px 7px 10px #000;
+*/
+opacity: 1;
+}
+
+/*FLOAT*/
+.fl_l {float: left;}
+.fl_r {float: right;}
+
+/*POSITION*/
+.p_a {position:absolute;}
+.p_r {position:relative;}
+.p_f {position:fixed;}
+
+/*CURSOR*/
+.c_m {cursor:move;}
+.c_h {cursor:help;}
+.c_p {cursor:pointer;}
+
+/*VISIBILITY*/
+.v_h {visibility:hidden;}
+.v_v {visibility:visible;}
+
+/*WHITE_TEXT_SHADOW*/
+.t_sh {color:#ffffff;text-shadow: 2px 2px 5px #000000;}
+
+.t_c {text-align:center;}
+
+/*BOX_SHADOW*/
+.bx_sh {
+box-shadow: 3px 3px 10px #000;
+}
+
+.bx_bn {
+box-shadow:5px 5px 5px rgba(255,255,255,0.3) inset,-5px -5px 5px rgba(0,0,0,0.3) inset;/**/
+}
+
+.bx_bh {
+box-shadow: 3px 3px 10px #000,5px 5px 5px rgba(255,255,255,0.3) inset,-5px -5px 5px rgba(0,0,0,0.3) inset;/**/
+}
+
+.bx_bhh:hover {
+box-shadow: 7px 7px 10px #000,5px 5px 5px rgba(255,255,255,0.3) inset,-5px -5px 5px rgba(0,0,0,0.3) inset;/**/
+}
+
+.bx_hl {
+box-shadow:-5px -5px 5px 5px rgba(0,0,0,0.5), 0px 0px 5px 10px rgba(255,255,255,0.3);
+}
+
+/*BOX_PADDING_TYPE*/
+.bx_pt,.bx_pt h1,.bx_pt h2,.bx_pt h3,.bx_pt h4,.bx_pt h5,.bx_pt h6 {padding: 5px 50px 5px 50px;}
+/*OVERFLOW*/
+.o_ {
+	overflow-y:auto;
+	overflow-x:auto;
+}
+.o_xy {
+	overflow-y:hidden;
+	overflow-x:hidden;
+}
+.o_x {
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+/*BACKGROUND*/
+/* "bcdghnoprstvwxyz" */
+.i_a {background:#806080;}
+.i_b {background:#8080ff;}
+.i_c {background:#80ffff;}
+.i_d {background:#ff0000;}
+.i_e {background:#406080;}
+.i_g {background:#00ff00;}
+.i_h {background:#60b0d0;}
+.i_i {background:#d06040;}
+.i_m {background:#206060;}
+.i_h25 {background:rgba(255,255,255,0.25);}
+.i_h50 {background:rgba(255,255,255,0.5);}
+.i_h75 {background:rgba(255,255,255,0.75);}
+.i_l25 {background:rgba(0,0,0,0.25);}
+.i_l50 {background:rgba(0,0,0,0.5);}
+.i_l75 {background:rgba(0,0,0,0.75);}
+.i_n {background:#808080;}
+.i_o {background:#ffb000;}
+.i_p {background:#ff80ff;}
+.i_r {background:#ff8080;}
+.i_t {background:transparent;}
+.i_u {background:#806060;}
+.i_v {background:#004060;}
+.i_w {background:#ffffff;}
+.i_x {background:#408080;}
+.i_y {background:#ffff80;}
+.i_z {background:#000000;}
+
+/*SIZE*/
+.q_8 {width:8px;height:8px;} 
+.q_10 {width:10px;height:10px;} 
+.q_12 {width:12px;height:12px;} 
+.q_16 {width:16px;height:16px;} 
+.q_18 {width:18px;height:18px;} 
+.q_20 {width:20px;height:20px;} 
+.q_22 {width:22px;height:22px;} 
+.q_24 {width:24px;height:24px;} 
+.q_26 {width:26px !important;height:26px !important;} 
+.q_28 {width:28px !important;height:28px !important;} 
+.q_30 {width:30px;height:30px;} 
+.q_32 {width:32px;height:32px;} 
+.q_48 {width:48px;height:48px;} 
+.q_64 {width:64px;height:64px;} 
+
+/*_SIZE*/
+.q_f {top:0px;right:0px;bottom:0px;left:0px;} 
+.q_e {width: 100%;height:100%;}
+
+/*WIDTH*/
+.b_16 {width:16px;}
+.b_30 {width:30px;}
+.b_50 {width:50px;}
+.b_60 {width:60px;}
+.b_90 {width:90px;}
+.b_120 {width:120px;}
+.b_150 {width:150px;}
+.b_180 {width:180px;}
+.b_210 {width:210px;}
+.b_240 {width:240px;}
+.b_270 {width:270px;}
+.b_300 {width:300px;}
+.b_330 {width:330px;}
+.b_360 {width:360px;}
+.b_390 {width:390px;}
+
+/*HEIGHT*/
+.h_16 {height:16px;}
+.h_18 {height:18px;}
+.h_22 {height:22px;}
+.h_24 {height:24px;}
+
+/* [Copyright 10/05/2012 SanEcIn][] ¤][¤¤] */
+
+</style><style type="text/css">/*[¤[TeRmiNuS]@[_Blank_/_Service_/_Pages_/_style_.css]¤¤¤ ... */
+
+/*][ fit ... */
+
+html {overflow-x:hidden;}
+
+section {width:1000px;}/* ... можно убрать ... :/ ...	 */
+
+/* [Copyright 10/05/2012 SanEcIn][] ¤][¤¤] */
+
+</style><style type="text/css">/*[¤[TeRmiNuS]@[_Blank_/_Service_/_Pages_/fit/_style_.css]¤¤¤ ... */
+
+/*][ fit ... */
+
+section {width:100%;}/* ... можно убрать ... :/ ...	 */
+
+.bx_bh {
+border:1px #404040 solid;
+}
+
+.r_ {resize: both;overflow:auto;width:auto;}
+
+/*div {border-radius:10px;}*/
+
+/* [Copyright 10/05/2012 SanEcIn][] ¤][¤¤] */
+
+</style><script type="text/javascript"></script><script type="text/javascript">//[¤[mdx]@[_Blank_/_Service_/_Pages_/_script_.js][пакет¤[0]¤]¤¤¤ ...
+//... [¤¤
+//][]
+
+var cnt_=0;
+
+function tic() {
+
+document.querySelector("#mon").innerHTML=cnt_++;
+
+	var i,j,f,s,z,sc_; 
+
+	setTimeout("tic()",100);
+
+	for(i=fit.length;i--;){//
+		j=fit[i];//		j=fit;
+		f=fit[i].style;//		f=j.style;
+		z=fit[i].zoom;//		z=j.zoom;
+
+		sc_=Math.floor(j.parentNode.clientWidth/j.clientWidth*1024)/1024;
+		if (j.scale!=sc_){
+			j.scale=sc_;
+			s="scale("+sc_*z+")";
+			f.webkitTransform=s;
+			f.MozTransform=s;
+			f.OTransform=s;
+
+			f.top=(sc_*z-1)*j.clientHeight/2+"px";
+			f.left=(50-50/sc_)+"%";
+
+
+		}
+
+	}//
+}
+
+function init(){
+
+//][fit ...
+	for(i=(fit=document.querySelectorAll (".fit")).length;i--;) {
+		(j=fit[i].getAttribute("data-scale"))?fit[i].scale=j:fit[i].scale=1;
+		(j=fit[i].getAttribute("data-zoom"))?fit[i].zoom=j:fit[i].zoom=1;
+	}
+
+//document.querySelector ("#mdxframe").src=a;//+"?"+Math.floor(Math.random()*10)
+
+	tic();
+
+}
+
+if (window.addEventListener) window.addEventListener("load",init, false); else window.onload=init();
+
+</script><script type="text/javascript">//[¤[mdx]@[_Blank_/_Service_/_Pages_/fit/_script_.js][пакет¤[0]¤]¤¤¤ ...
+//... [¤¤
+//][ ... !!!!!!!!!!!!!! disabled !!!!!!!!!!!!!! ... см. ../_script_.js ... ]
+
+/*
+
+var cnt_=0;
+
+function tic() {
+
+document.querySelector("#mon").innerHTML=cnt_++;
+
+	setTimeout("tic()",100);
+
+	for(i=fit.length;i--;){//
+
+		j=fit[i];//		j=fit;
+		f=fit[i].style;//		f=j.style;
+		z=fit[i].zoom;//		z=j.zoom;
+
+		sc_=j.parentNode.clientWidth/j.clientWidth;
+		if (j.scale!=sc_){
+			j.scale=sc_;
+			f.webkitTransform="scale("+sc_*z+")";
+			f.MozTransform="scale("+sc_*z+")";
+			f.OTransform="scale("+sc_*z+")";
+
+			f.top=(sc_*z-1)*j.clientHeight/2+"px";
+			f.left=(50-50/sc_)+"%";
+
+
+		}
+
+	}//
+}
+
+function init(){
+
+//][fit ...
+	for(i=(fit=document.querySelectorAll (".fit")).length;i--;) {
+		(j=fit[i].getAttribute("data-scale"))?fit[i].scale=j:fit[i].scale=1;
+		(j=fit[i].getAttribute("data-zoom"))?fit[i].zoom=j:fit[i].zoom=1;
+	}
+
+//document.querySelector ("#mdxframe").src=a;//+"?"+Math.floor(Math.random()*10)
+	fit[0].zoom=0.9;// ... section ...
+	tic();
+
+}
+
+if (window.addEventListener) window.addEventListener("load",init, false); else window.onload=init();
+
+*/
+
+</script>
 </head>
+<body class="p_a q_f">
 
-<body>
-      
-<div class="wrapper">
+<!-- ... div class="p_a q_f"-->
 
-<section class="fit">
+<div data-zoom="0.8" class="fit p_a">
 
-	<header><h1>FIT <i> ... template ... </i> </h1></header><div id="mon"></div>
+<section>
 
-		<div class="mdx i" onclick="for(i=(j=document.querySelectorAll ('.mdx')).length;i--;) j[i].style.boxShadow='none';">
+	<header class="p_r bx_bn t_c">
+		<h1 class="p_r">
+			<div class="w_dib b_r15 b_bl bx_pt i_x">БЛА<div class="b_r5 w_dib bx_bn  i_l25">НКъ&nbsp;</div></div>
+			<div class="w_dib b_r15 b_bl bx_pt i_e">tem<div class="b_r5 w_dib bx_bn i_l25">plate&nbsp;</div> </div>
+			<div class="p_a q_64" style="left:50%;top:50%;">
+			<div class="p_a q_64" style="left:-50%;top:-50%;">
+				<div class="fit p_a b_r25 b_bl i_r">
+					<br /><br /><br /><br />&nbsp;&nbsp;Research&nbsp;&nbsp;
+				</div>
+				<div class="fit p_a b_r10 bx_bh i_a">
+					FIT
+				</div>
+			</div>
+			</div>
+		</h1>
+			<br />
+			<div class="bx_pt i_l25 t_sh">... шаблон выглядит одинаково при любой ширине окна (экрана ) ... <i> ... Look Same Any Screen size width ... </i></div>
+			
+	</header>
+
+		<div class="bx_bh bx_pt b_r10  t_c i_i" onclick="for(i=(j=document.querySelectorAll ('[class*=bx_]')).length;i--;) j[i].style.boxShadow='none';">
 			... есТли тормозит ... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...  if operation speed problem ...<br />
-			... нажмите, чтобы убрать тени <i class="o"> ! </i> switch off shadow  by click here ... <br />
+			... нажмите, чтобы убрать тени <i class="i_o b_bl">&nbsp;&nbsp;!&nbsp;&nbsp;</i> switch off shadow  by click here ... <br />
 		</div>
 
 
 	<article>
 
-		<div class="mdx"><br />
-			... попытка УПРОСТИТЬ ... использование разных экранов ...<br /><br />
+		<div class="bx_bh b_r10 bx_pt i_x"><br />
+			... использование широких экранов ...<br /><br />
 
-			<div class="mdx" style="position:relative;height:300px;">
-				<div class="wrapper" style="top:10px;right:10px;bottom:10px;left:10px;overflow-y:auto;">
-					<div class="fit en" style="width:300px;">						<!-- ! -->
+			<div class="b_r25 p_r i_n" style="height:300px;"> <!-- b_bl  bx_bh -->
+				<div class="b_r5 p_a q_f o_x bx_hl">
+					<div class="fit p_a bx_pt i_e"  style="width:300px;">						<!-- !-->
 
 			... once i got a new widescreen ...<br />
 			... got a new look at ...<br /><br />
@@ -187,70 +457,75 @@ header h1 {padding: 5px 50px 5px 50px;}
 			...this is not H tag ... simple text ...<br />
 			... zoomed by FIT ...<br /><br />
 			... :/ ... <br />
+			<br />&nbsp;
+			<pre>
+&lt;div class="wrapper scroll"&gt;
+	&lt;div class="fit" style="width: ... px;"&gt;
 
+			...
+
+	&lt;/div&gt;
+&lt;/div&gt;
+			</pre>
 					</div>
 				</div>
-			</div>
+			</div><br />
 		</div>
 
-		<div class="mdx en"><br />
-			... set <i>&lt;div class="fit"&gt;</i> width ... be quiet ...<br /><br />
-			<div class="mdx"><br />
-				... установить ширину <i>&lt;div class="fit"&gt;</i> ... не ПАРитЪся ... <br /><br />
-			</div>
+		<div class="bx_bh b_r10 bx_pt i_x"><br />
+			... set width for <i>&lt;div class="fit"&gt;</i> ... be quiet ...<br /><br />
+			<div class="p_r r_" style="height:300px;width:20%;border:7px #ff00ff dashed;"><br />
+					<div class="fit p_a bx_pt i_x o_xy"  style="width:300px;">						<!-- !  style="width:350px;"-->
+				... установить ширину для <i>&lt;div class="fit"&gt;</i><br /> ... не ПАРитЪся ... <br /><br />
+				... элЕмент fit выРОВняетЪся ...<br />
+				<br />&nbsp;
+			<pre>
+&lt;div class="wrapper scroll"&gt;
+	&lt;div class="fit" style="width: ... px;"&gt;
 
-			<div style="position:relative;width:20%;height:300px;resize:both;overflow:hidden;border:7px #ff00ff dashed;">
-				<div class="wrapper" style="top:10px;right:10px;bottom:10px;left:10px;overflow-x:hidden;overflow-y:auto;">
-					<div class="fit en" style="white-space:nowrap;">                                               <!-- ! -->
+			...
 
-                        ... к примеру ...<br />
-			... этот текст вложен в ...<br />
-                        ... контЭйнер [fit width: ... text width ... ;] ...<br /><br />
-
-			... который , вложен в ...<br />
-			... [div resize: both;] ... :/ ... <br />
-                        изменяя размеры , наблюдаем ... <br /><br />
-                        ...  ...<br />
-                        ...  ...<br /><br />
-                        ... :/ ... <br />
-
-					</div>
+	&lt;/div&gt;
+&lt;/div&gt;
+			</pre>
 				</div>
 			</div>
-
+			<br />
 		</div>
 
-		<div class="mdx a" onclick="document.querySelector('.fit').style.width='500px';"><br />
+		<div class="bx_bh b_r10 bx_pt i_x"><br /> ... ИЗМените ШИРиНУ ДОКумента ... change DOCument width ...<br />&nbsp;
+		<div class="bx_bh b_r10 bx_pt  i_a" onclick="document.querySelector('.fit').style.width='500px';"><br />
 			... нажмите, чтобы установить ширину в <i> 500 </i> set width  by click here ... <br /><br />
 		</div>
 
-		<div class="mdx a" onclick="document.querySelector('.fit').style.width='1000px';"><br />
+		<div class="bx_bh b_r10 bx_pt  i_a" onclick="document.querySelector('.fit').style.width='1000px';"><br />
 			... нажмите, чтобы установить ширину в <i> 1000 </i> set width  by click here ... <br /><br />
 		</div>
 
-		<div class="mdx a" onclick="document.querySelector('.fit').style.width='2000px';"><br />
+		<div class="bx_bh b_r10 bx_pt  i_a" onclick="document.querySelector('.fit').style.width='2000px';"><br />
 			... нажмите, чтобы установить ширину в <i> 2000 </i> set  width by click here ... <br /><br />
+		</div><br />
 		</div>
 
-		<div class="mdx"><br />
+		<div class="bx_bh b_r10 bx_pt i_x "><br />
 
-			<header><h4>IFRAME ... s ... ифрЭйМЫ ... </h4></header>
+			<header class="bx_bn"><h4>IFRAME ... s ... ифрЭйМЫ ... </h4></header>
 			... имея некоторое терпение можно увидеть <h2 style="display:inline;"> 10 </h2> скроллБаррОфф ... <br />
-			<div class="mdx en"> ... TRy to look at <i>10 th<i> scrollbar </i> </i>... :/ ... </div>
+			<div class="bx_bh b_r5 bx_pt  i_e"> ... TRy to look at <i>10 th<i> scrollbar </i> </i>... :/ ... </div>
 
 			<div style="position:relative;height:500px;">
 				<div class="wrapper" style="overflow:hidden;">
-<!-- -->				<iframe id="mdxframe" src="_Fit_zoom.html"   style="width:100%;height:100%;border:none;"></iframe>
+<!--			<iframe id="mdxframe" src="_Blank_/Fit_zoom.html"   style="width:100%;height:100%;border:none;"></iframe>	 -->
 				</div>
 			</div>
 			<br /><br />
 		</div>
-
-<!--		<div class="mdx"><br />
+<!--
+		<div class="bx_bh bx_pt "><br />
 
 			<header><h4>EMBED ... Эм , так сказать , БЕДъ ... </h4></header>
-			... КРивО ... ну и ладно ... :/ ...<br />
-			<div class="mdx en"> ... (flash has trouble)... need more .. :/ ... </div>
+			...  :/ ...<br />
+			<div class="bx_bh bx_pt  i_e"> ... (flash has trouble)... need more .. :/ ... </div>
 
 		<div style="position:relative;height:300px;">
 			<div class="wrapper">
@@ -266,7 +541,7 @@ header h1 {padding: 5px 50px 5px 50px;}
 		</div>
 		</div>
 
-		<div class="mdx">
+		<div class="bx_bh bx_pt ">
 			.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />
 			***
 
@@ -274,12 +549,39 @@ header h1 {padding: 5px 50px 5px 50px;}
  -->
 	</article>
 
-	<footer></footer>
+	<footer>
+
+	</footer>
 
 </section>
 
-<div style="height:2%"><!-- fOOter --></div></div>
+<div style="height:2%"><!-- fOOter --></div>
 
+</div>
+
+
+<style>
+#serv {
+	position:absolute;
+	left:2%;top:2%;
+	width:70px;
+	height:80px;
+	border:2px #fff dotted;
+	z-index:1;
+ 	visibility:hidden;/* *//* DEBUG +coment */
+}
+
+</style>
+
+<div id="serv" class="b_bl bx_r i_n">
+<div id="monH">tic_cnt</div>
+<div id="mon"></div>
+<div id="monV">[high]</div>
+<div id="monW"></div>
+<div id="monS"></div>
+<div id="monE"></div>
+<div id="monI"></div>
+</div>
+<!-- /*  [end¤@[_pack_v_1.8.1_]¤¤¤¤][[fit][БЛАНКЪ]][id¤1514250cfbff47ba461.36212297][Copyright 15/12/2012 SanEcIn][time¤18.12.2012 04:59:32][gen¤0.0048]¤][¤¤] */-->
 </body>
 </html>
-<!-- /* [mdx][Copyright 16/06/2012 SanEcIn][_Fit_.html]¤][¤¤] */ -->
