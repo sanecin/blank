@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!-- [¤[mdx]@[_Fit_.html]¤ ...  -->
+
+ <!--/*... make with all this code all you want ... cool GPL ...
+... кто будет продавать этот код, тот мудак и умрёт в страшных муках ... русский GPL ...*/-->
+
+<html><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="description" content="[¤[mdx][80144f9d4923e49054.99106145@[_Fit_.html]¤]">
+<meta name="keywords" content="_Fit_.html">
+<meta name="author" content="SanEcIn">
+<meta name="revised" content="29/04/2012">
+
+  <title>_Fit_</title>
+  
+<link rel="shortcut icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAV0lEQVR4nGP8DwQMFAAmSjTDDWBkZCQLg/VS3QvIphMjzoSuCASwOQomhm4I3AB8mvEZwoQuQEzAIeuBByIxLsCmDu4FXH7EpxnFAEKG4HIh9dPBCDQAAKYZLmHAFM5jAAAAAElFTkSuQmCC">
+
+<style>
+
+/**/body {
+ 	overflow-x:hidden;
+	overflow-y:scroll;
+}	 
+
+section {width:1000px;}/*	 */
+
+.wrapper {
+	position:absolute;top:0px;right:0px;bottom:0px;left:0px;/* ... наследует размер контЭйнера ... */
+/*	overflow-x:hidden;overflow-y:scroll;*/
+/*	padding:2%; */
+}
+
+.fit {
+	/*width:...px;	 ...  правильнее ... :/ ... */
+	position:absolute;
+}
+
+</style>
+
+<script type="text/javascript">
+
+function tic() {
+
+	for(i=fit.length;i--;){//
+
+		j=fit[i];//		j=fit;
+		f=fit[i].style;//		f=j.style;
+		z=fit[i].zoom;//		z=j.zoom;
+
+		sc_=j.parentNode.clientWidth/j.clientWidth;
+		if (j.scale!=sc_){
+			j.scale=sc_;
+			f.webkitTransform="scale("+sc_*z+")";
+			f.MozTransform="scale("+sc_*z+")";
+			f.OTransform="scale("+sc_*z+")";
+
+			f.top=(sc_*z-1)*j.clientHeight/2+"px";
+			f.left=(50-50/sc_)+"%";
+		}
+
+	}//
+	once_=setTimeout("tic()",50);
+
+}
+
+function init(){
+
+	for(i=(fit=document.querySelectorAll (".fit")).length;i--;) {fit[i].scale=1;fit[i].zoom=1;}//
+//document.querySelector ("#mdxframe").src=a;//+"?"+Math.floor(Math.random()*10)
+
+	tic();
+
+}
+
+if (window.addEventListener) window.addEventListener("load",init, false); else window.onload=init();
+
+</script>
+
+<style>
+
+* {
+    padding:0px;margin: 0px;
+}
+
+body{
+	cursor:default;text-shadow:1px 1px 1px #000000;
+	background:#008080;color:#ffffa0;
+	font-size:16px;font-weight:900;font-family:Tahoma;
+/*	white-space:nowrap;  */
+}
+
+section,header,article,footer,menu,nav {display:block;}	/* html5 ... :/ ... */
+
+section {background:#d0ffd0;padding:10px;}
+
+header,article,footer,i,a {border: 2px #000000 solid;}
+i:not([class]),pre:not([class]) {text-shadow: 1px 1px 3px #000000;}
+
+header,article,footer,nav,h1,h2,h3,h4,h5,h6,i {border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;}
+a,input,div{border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;}
+
+header{background:#80d0ff;padding:10px;}
+nav{background:#ffa000;margin:10px auto 10px auto;padding:10px;}
+article {background:#b0e0b0;margin:10px auto 10px auto;padding:10px;color:#ffffff;font-size:16px;font-weight:900;font-family:Tahoma;}
+footer {background:#80b0d0;height:66px;text-align:center;}
+
+a:link,a:visited,a:hover,a:active {color:#ffffff;}/**/
+
+a>img,input {cursor:pointer;}
+
+div.mdx {
+border:0px;
+background:#408080;
+margin:10px;
+padding: 5px 50px 5px 50px;
+box-shadow: 3px 3px 10px #000,5px 5px 5px rgba(255,255,255,0.3) inset,-5px -5px 5px rgba(0,0,0,0.3) inset;/**/
+border:1px #000000 solid;
+}
+
+div.en {background:#406080;}
+
+div.a {background:#806080;}
+
+.r {background:#ff8080;}
+
+.o {background:#ffb000;color:#ffffff;}
+
+div.u {background:#806060;}
+
+div.i {background:#d06040;}
+
+i {padding:2px 10px;font:10px bold;font-family:Verdana;}
+i:not([class]) {background:#70a0a0;color:#ffffff;}
+pre {padding:10px 10px;background:#505070;color:#ffffff;font:12px bold;font-family:Verdana;}
+
+p,span,i {display:inline-block;}/* */
+
+h1 {font-size:28px;}
+h2 {font-size:24px;}
+h3 {font-size:20px;}
+h4 {font-size:16px;}
+h5 {font-size:12px;}
+h6 {font-size:10px;}
+h7 {font-size:8px;}
+
+header h1,
+header h2,
+header h3,
+header h4,
+header h5,
+header h6 {color:#ffffff;background:#60b0d0;text-shadow: 2px 2px 5px #000000;padding: 3px 10px 3px 10px;}
+header h1 {padding: 5px 50px 5px 50px;}
+
+</style>
+
+</head>
+
+<body>
+      
+<div class="wrapper">
+
+<section class="fit">
+
+	<header><h1>FIT <i> ... template ... </i> </h1></header><div id="mon"></div>
+
+		<div class="mdx i" onclick="for(i=(j=document.querySelectorAll ('.mdx')).length;i--;) j[i].style.boxShadow='none';">
+			... есТли тормозит ... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...  if operation speed problem ...<br />
+			... нажмите, чтобы убрать тени <i class="o"> ! </i> switch off shadow  by click here ... <br />
+		</div>
+
+
+	<article>
+
+		<div class="mdx"><br />
+			... попытка УПРОСТИТЬ ... использование разных экранов ...<br /><br />
+
+			<div class="mdx" style="position:relative;height:300px;">
+				<div class="wrapper" style="top:10px;right:10px;bottom:10px;left:10px;overflow-y:auto;">
+					<div class="fit en" style="width:300px;">						<!-- ! -->
+
+			... once i got a new widescreen ...<br />
+			... got a new look at ...<br /><br />
+
+			... that template ... flat out <br />
+			screen size madness ... <br /><br />
+			...this is not H tag ... simple text ...<br />
+			... zoomed by FIT ...<br /><br />
+			... :/ ... <br />
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mdx en"><br />
+			... set <i>&lt;div class="fit"&gt;</i> width ... be quiet ...<br /><br />
+			<div class="mdx"><br />
+				... установить ширину <i>&lt;div class="fit"&gt;</i> ... не ПАРитЪся ... <br /><br />
+			</div>
+
+			<div style="position:relative;width:20%;height:300px;resize:both;overflow:hidden;border:7px #ff00ff dashed;">
+				<div class="wrapper" style="top:10px;right:10px;bottom:10px;left:10px;overflow-x:hidden;overflow-y:auto;">
+					<div class="fit en" style="white-space:nowrap;">                                               <!-- ! -->
+
+                        ... к примеру ...<br />
+			... этот текст вложен в ...<br />
+                        ... контЭйнер [fit width: ... text width ... ;] ...<br /><br />
+
+			... который , вложен в ...<br />
+			... [div resize: both;] ... :/ ... <br />
+                        изменяя размеры , наблюдаем ... <br /><br />
+                        ...  ...<br />
+                        ...  ...<br /><br />
+                        ... :/ ... <br />
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="mdx a" onclick="document.querySelector('.fit').style.width='500px';"><br />
+			... нажмите, чтобы установить ширину в <i> 500 </i> set width  by click here ... <br /><br />
+		</div>
+
+		<div class="mdx a" onclick="document.querySelector('.fit').style.width='1000px';"><br />
+			... нажмите, чтобы установить ширину в <i> 1000 </i> set width  by click here ... <br /><br />
+		</div>
+
+		<div class="mdx a" onclick="document.querySelector('.fit').style.width='2000px';"><br />
+			... нажмите, чтобы установить ширину в <i> 2000 </i> set  width by click here ... <br /><br />
+		</div>
+
+		<div class="mdx"><br />
+
+			<header><h4>IFRAME ... s ... ифрЭйМЫ ... </h4></header>
+			... имея некоторое терпение можно увидеть <h2 style="display:inline;"> 10 </h2> скроллБаррОфф ... <br />
+			<div class="mdx en"> ... TRy to look at <i>10 th<i> scrollbar </i> </i>... :/ ... </div>
+
+			<div style="position:relative;height:500px;">
+				<div class="wrapper" style="overflow:hidden;">
+<!-- -->				<iframe id="mdxframe" src="_Fit_zoom.html"   style="width:100%;height:100%;border:none;"></iframe>
+				</div>
+			</div>
+			<br /><br />
+		</div>
+
+<!--		<div class="mdx"><br />
+
+			<header><h4>EMBED ... Эм , так сказать , БЕДъ ... </h4></header>
+			... КРивО ... ну и ладно ... :/ ...<br />
+			<div class="mdx en"> ... (flash has trouble)... need more .. :/ ... </div>
+
+		<div style="position:relative;height:300px;">
+			<div class="wrapper">
+				<div class="fit" style="width:1300px;">
+		<div style="position:relative;width:640px;height:390px;float:left;"><i>FLASH</i>
+					<embed src="http://www.youtube.com/v/up5jmbSjWkw?version=3" type="application/x-shockwave-flash" width="100%" height="100%" allowfullscreen="true"></embed>
+		</div>
+		<div style="position:relative;width:640px;height:390px;float:right;"><i>HTML5</i>
+					<iframe src='http://www.youtube.com/embed/up5jmbSjWkw?feature=player_embedded' width="100%" height="100%" allowfullscreen></iframe>
+		</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="mdx">
+			.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />.<br />
+			***
+
+		</div>
+ -->
+	</article>
+
+	<footer></footer>
+
+</section>
+
+<div style="height:2%"><!-- fOOter --></div></div>
+
+</body>
+</html>
+<!-- /* [mdx][Copyright 16/06/2012 SanEcIn][_Fit_.html]¤][¤¤] */ -->
